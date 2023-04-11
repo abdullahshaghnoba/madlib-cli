@@ -1,8 +1,8 @@
 import re
 
 def read_template(path):
-       if path!= "/home/abdullah/madlib-cli/madlib_cli/assets/dark_and_stormy_night_template.txt" :
-        if path != "/home/abdullah/madlib-cli/madlib_cli/assets/output.txt":
+       if path!= "madlib_cli/assets/dark_and_stormy_night_template.txt" :
+        if path != "madlib_cli/assets/output.txt":
          raise FileNotFoundError("Error : path is not correct")
        
 
@@ -35,7 +35,7 @@ def merge(str,tuple):
 if __name__ == "__main__":
     print("welcom to our game, play by entering what you are asked ;)")
     
-    template = read_template("/home/abdullah/madlib-cli/madlib_cli/assets/output.txt")
+    template = read_template("madlib_cli/assets/output.txt")
     stripped_template, parts = parse_template(template)
 
     user_inputs = []
