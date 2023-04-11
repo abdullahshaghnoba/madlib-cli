@@ -30,7 +30,7 @@ def merge(str,tuple):
     y = list(tuple)
     txt = str.format(*y)
     return txt
-
+# path fixed
 
 if __name__ == "__main__":
     print("welcom to our game, play by entering what you are asked ;)")
